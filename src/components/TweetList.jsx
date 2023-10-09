@@ -6,6 +6,7 @@ const TweetList = () => {
   const users = useSelector((state) => state.user.value);
   return (
     <>
+      {/* {eslint-disable-next-line}  */}
       <div className="">
         {tweets.map((tweet) => {
           const user = users.find((user) => user.id === tweet.userId);

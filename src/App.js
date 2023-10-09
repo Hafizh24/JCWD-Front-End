@@ -1,11 +1,22 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import RegisterPage from "./pages/RegisterPage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TimelinePage from "./pages/TimelinePage";
 import LoginPage from "./pages/LoginPage";
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setUser } from "./redux/userSlice";
+import Required from "./components/Required";
+import RegisterPage from "./pages/RegisterPage";
+
+const router = createBrowserRouter([
+  { path: "/", element: <LoginPage /> },
+  { path: "/register", element: <RegisterPage /> },
+  {
+    path: "/timeline",
+    element: <Required />,
+    children: [{ path: "/timeline", element: <TimelinePage /> }],
+  },
+]);
 
 function App() {
   const id = localStorage.getItem("id");
@@ -26,14 +37,7 @@ function App() {
   }, []);
   return (
     <>
-      <Routes>
-        <Route path="/" element={id ? <Navigate to="/timeline" /> : <LoginPage />} />
-        {/* <Route path="/" element={<LoginPage />} /> */}
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/timeline" element={id ? <TimelinePage /> : <Navigate to="/" />} />
-        {/* <Route path="/timeline" element={<TimelinePage />} /> */}
-      </Routes>
-      {/* <TimelinePage /> */}
+      <RouterProvider router={router} />
     </>
   );
 }
