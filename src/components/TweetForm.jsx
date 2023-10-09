@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { Avatar } from "flowbite-react";
 
 const TweetForm = () => {
-  const { id, username } = useSelector((state) => state.user.data);
+  const { id } = useSelector((state) => state.user.data);
   //   console.log(username);
 
   const handleSubmit = async (data) => {

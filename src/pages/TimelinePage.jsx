@@ -3,7 +3,6 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setTweet } from "../redux/tweetSlice";
 import Tweet from "../components/Tweet";
-import Navbar from "../components/Navbar";
 import UserAccountMenu from "../components/UserAccountMenu";
 import Sidebar from "../components/Sidebar";
 import { setData } from "../redux/userSlice";

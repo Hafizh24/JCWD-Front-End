@@ -8,7 +8,7 @@ const TweetList = () => {
     <>
       <div className="">
         {tweets.map((tweet) => {
-          const user = users.find((user) => user.id == tweet.userId);
+          const user = users.find((user) => user.id === tweet.userId);
           if (user) {
             return (
               <div key={tweet.id} className="border p-3 mb-4">
