@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Shoes ",
+      "price": 950000,
+      "img": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png"
+    },
+    {
+      "id": 2,
+      "name": "Chino",
+      "price": 345000,
+      "img": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/450269/sub/goods_450269_sub15.jpg?width=494"
+    },
+    {
+      "id": 3,
+      "name": "Tshirt",
+      "price": 190000,
+      "img": "https://down-id.img.susercontent.com/file/bf5226769cb742815968d29004d5818a"
+    },
+    {
+      "id": 4,
+      "name": "Hoodie",
+      "price": 6000000,
+      "img": "https://media.karousell.com/media/photos/products/2023/2/14/hoodie_air_jordan_23_x_kaws_hi_1676377810_c7cd60e6_progressive.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Trousers",
+      "price": 850000,
+      "img": "https://www.fjallraven.com/49439f/globalassets/catalogs/fjallraven/f8/f866/f86666/f018/vardag_trousers_m_86666-018_a_main_fjr.jpg?width=2000&height=2000&mode=BoxPad&bgcolor=fff&quality=100"
+    }
+  ]
+}
