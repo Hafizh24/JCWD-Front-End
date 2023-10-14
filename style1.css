@@ -1,0 +1,24 @@
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  background-color: orange;
+  width: 100%;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+td {
+  text-align: center;
+}
+
+#invertebrate {
+  margin-left: 50px;
+}
